@@ -3,5 +3,5 @@
 //get gifs to make the game more engaging
 //**don't forget increment seconds */
 //use game reset as well
-alert("HEllo World")
+alert("Hello World")
 console.log("Test me!")

@@ -5,13 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- link the html to css stylesheet -->
     <!-- get the scripts linked -->
 </head>
 <body>
-    <!-- game body starts here -->
-    <!-- make a div with a container, row and col for the game -->
+  <div class="container">
+     <div class="row"><!-- start title row -->
+        <div class="col-12" id="title">Name that cartoon</div>
+         </div>
+         <!-- end title row -->
+    
+          <div class="row" id="mainRow"><!-- start mainRow -->
+            <div class="col-sm-2" id="leftPanel">
+                        <!-- start game button. Change to Done btn after game start -->
+            <button id="startBtn">START</button><br>
+    
+    <!-- Display scores section at end of game. Hide scores until game over -->
+    <div class="stats">
+            <p id="right">Right: 0</p><br>
+            <p id="wrong">Wrong: 0</p><br>
+            <p id="score">SCORE:</p>
+            <button  id="restartBtn">New Game</button>
+        </div>
+   </div>
+
+   <div class="col-sm-9" id="content">
+       
+       <div class="row" >
+           <div class="col-12" id="timerCol">
+               <p class="timer">TIME LEFT: </p>
+               <p class="timer" id="showTime">00:00</p>
+           </div>
+       </div>
+
+       <div class="row"><!-- start question row -->
+           <div class="col-12" id="question"></div>
+       </div>
+       <!-- end question row -->
+       <hr>
+       <div class="row"><!-- start answer row -->
+           <div class="col-12" id="answer"></div>
+           <img id="lost" src="">
+           <img id="win" src="">
+       </div>
+       <!-- end answer row -->
+
+   </div><!-- end main content col -->
+
+   <div class="col-sm-1"></div><!-- right empty col -->
+
+</div>
+<!-- end mainRow -->
+</div>
+<!-- end bootstrap container -->
     <script src="assets/javascript/app.js"></script>
 </body>
 </html>
