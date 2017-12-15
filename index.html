@@ -10,56 +10,30 @@
     <!-- link the html to css stylesheet -->
     <!-- get the scripts linked -->
 </head>
-<body>
-  <div class="container">
-     <div class="row"><!-- start title row -->
-        <div class="col-12" id="title">Name that cartoon</div>
-         </div>
-         <!-- end title row -->
-    
-          <div class="row" id="mainRow"><!-- start mainRow -->
-            <div class="col-sm-2" id="leftPanel">
-                        <!-- start game button. Change to Done btn after game start -->
-            <button id="startBtn">START</button><br>
-    
-    <!-- Display scores section at end of game. Hide scores until game over -->
-    <div class="stats">
-            <p id="right">Right: 0</p><br>
-            <p id="wrong">Wrong: 0</p><br>
-            <p id="score">SCORE:</p>
-            <button  id="restartBtn">New Game</button>
-        </div>
-   </div>
-
-   <div class="col-sm-9" id="content">
-       
-       <div class="row" >
-           <div class="col-12" id="timerCol">
-               <p class="timer">TIME LEFT: </p>
-               <p class="timer" id="showTime">00:00</p>
-           </div>
-       </div>
-
-       <div class="row"><!-- start question row -->
-           <div class="col-12" id="question"></div>
-       </div>
-       <!-- end question row -->
-       <hr>
-       <div class="row"><!-- start answer row -->
-           <div class="col-12" id="answer"></div>
-           <img id="lost" src="">
-           <img id="win" src="">
-       </div>
-       <!-- end answer row -->
-
-   </div><!-- end main content col -->
-
-   <div class="col-sm-1"></div><!-- right empty col -->
-
-</div>
-<!-- end mainRow -->
-</div>
-<!-- end bootstrap container -->
+<body backgrond="assets/images/">
+        <header>
+                <br>
+                <h1 style="color: white;"> Cartoon Trivia Game</h1>
+            </header>
+            <div class="wrapper text-center">
+                <div class="jumbotron text-center transparent">
+                    <div id="timer" class="text-center">Time Remaining: Press Start to Begin... </div>
+                    <div id="question" class="text-center">See how much you really know about Cartoons by taking this interactive quiz!
+                    <br>
+                    You will have 15 seconds per question, with a total of 6 questions to answer.
+                    <br>
+                    Oh, and keep your eyes on the safeties!</div>
+                    <div id="answers" class="text-center">
+                        <div class="answer btn btn-success btn-lg" id="optionA"></div>
+                        <div class="answer btn btn-primary btn-lg" id="optionB"></div>
+                        <div class="answer btn btn-danger btn-lg" id="optionC"></div>
+                        <div class="answer btn btn-warning btn-lg" id="optionD"></div>
+                    </div>
+                    <div id="start" class="btn btn-primary btn-lg">Start!</div>
+                </div>
+            </div>
+        
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js"></script>
 </body>
 </html>
