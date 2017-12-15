@@ -20,7 +20,7 @@ body{
 	color: white;
 }
 .jumbotron {
-	border-radius: 5px;
+	border-radius: 25px;
 	background-color: gray;
 }
 #timer {
