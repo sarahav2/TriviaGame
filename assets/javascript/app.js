@@ -296,7 +296,7 @@ var trivia = {
 	rightAnswer: function() {
 		this.correct++;
 		$(".answer").hide();
-		$("#question").html("Touchdown!");
+		$("#question").html("Yay!");
 		$("#question").append("<br><img src='" + questions[i].gif + "'>");
 		this.nextQuestion();
 		
@@ -305,7 +305,7 @@ var trivia = {
 	wrongAnswer: function() {
 		this.incorrect++;
 		$(".answer").hide();
-		$("#question").html("Intercepted! Correct Answer:<br>");
+		$("#question").html("You missed it! Correct Answer:<br>");
 		$("[value='true']").contents().clone().appendTo($("#question"));
 		$("#question").append("<br><img src='" + questions[i].gif + "'>");
 		this.nextQuestion();
