@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <!-- link the html to css stylesheet -->
-    <!-- get the scripts linked -->
+	<meta charset="UTF-8">
+	<title>Pixar Jr. Trivia</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Sigmar+One" rel="stylesheet">
+	<link href="assets/css/reset.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body backgrond="assets/images/">
-        <header>
-                <br>
-                <h1 style="color: #201f1f;"> Cartoon Trivia Game</h1>
-            </header>
-            <div class="wrapper text-center">
-                <div class="jumbotron text-center transparent">
-                    <div id="timer" class="text-center">Time Remaining: Press Start to Begin... </div>
-                    <div id="question" class="text-center">See how much you really know about Cartoons by taking this interactive quiz!
-                    <br>
-                    You will have 15 seconds per question, with a total of 6 questions to answer.
-                    <br>
-                    Oh, and have fun while playing!</div>
-                    <div id="answers" class="text-center">
-                        <div class="answer btn btn-success btn-lg" id="optionA"></div>
-                        <div class="answer btn btn-primary btn-lg" id="optionB"></div>
-                        <div class="answer btn btn-danger btn-lg" id="optionC"></div>
-                        <div class="answer btn btn-warning btn-lg" id="optionD"></div>
-                    </div>
-                    <div id="start" class="btn btn-primary btn-lg">Start!</div>
-                </div>
-            </div>
-        
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/javascript/app.js"></script>
+<body>
+	<header>
+		<img src= 'assets/images/pixarHeaderJr.jpg' alt = 'headerImg' width = '100%'>
+	</header>
+
+	<div class = 'container'>
+		
+		<button class = 'btn btn-primary' id = 'startBtn'>Start</button>
+			<!-- Question page -->
+			<div id = timeLeft></div> 
+			<div id = currentQuestion></div> 
+			<div class = 'question'></div>
+			<div class = 'answerList'></div>
+		
+			<!-- Answer Page -->
+			<div id = message></div>
+			<div id = correctedAnswer></div>
+			<div id = gif></div>
+		
+			<!-- Scoreboard -->
+			<div id = finalMessage></div>
+			<div id = correctAnswers></div>
+			<div id = incorrectAnswers></div>
+			<div id = unanswered></div>
+			<div id = 'startOverBtn'></div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script type = "text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>
